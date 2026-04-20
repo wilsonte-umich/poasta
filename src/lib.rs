@@ -6,3 +6,4 @@ pub mod debug;
 pub mod graphs;
 pub mod bubbles;
 pub mod aligner;
+pub mod api;

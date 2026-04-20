@@ -352,6 +352,10 @@ where
         ranks
     }
 
+    pub fn get_topological_sorted<'a>(&'a self) -> &'a [POANodeIndex<Ix>] {
+        &self.topological_sorted
+    }
+
     pub fn get_aligned_nodes(&self, node: POANodeIndex<Ix>) -> &[POANodeIndex<Ix>] {
         &self.graph[node].aligned_nodes
     }
